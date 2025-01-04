@@ -53,7 +53,7 @@ This project is a backend service for managing a simple To-Do List application. 
 - **Response** (if the task does not exist):
 ```json
 {
-  "error": "Task not found"
+  "msg": "Internal Server Error"
 }
 ```
 
@@ -73,12 +73,6 @@ This project is a backend service for managing a simple To-Do List application. 
 ```json
 {
   "message": "Task created successfully",
-  "task": {
-    "id": "unique-id",
-    "title": "New Task Title",
-    "description": "New Task Description",
-    "status": "pending"
-  }
 }
 ```
 
@@ -95,13 +89,7 @@ This project is a backend service for managing a simple To-Do List application. 
 - **Response**:
 ```json
 {
-  "message": "Task status updated successfully",
-  "task": {
-    "id": "unique-id",
-    "title": "Task Title",
-    "description": "Task Description",
-    "status": "completed"
-  }
+  "msg": "Status updated successfully",
 }
 ```
 
@@ -111,14 +99,7 @@ This project is a backend service for managing a simple To-Do List application. 
 - **Response** (if the task exists):
 ```json
 {
-  "message": "Task deleted successfully"
-}
-```
-
-- **Response** (if the task does not exist):
-```json
-{
-  "error": "Task not found"
+  "msg": "Task deleted successfully"
 }
 ```
 
@@ -126,8 +107,8 @@ This project is a backend service for managing a simple To-Do List application. 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/akashkush7/todo-list-backend.git
-   cd todo-list-backend
+   git clone https://github.com/akashkush7/Assessment.git
+   cd Assessment
    ```
 
 2. **Install Dependencies**:
